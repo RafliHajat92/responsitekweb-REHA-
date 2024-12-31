@@ -1,0 +1,17 @@
+[
+    {
+      "tanggal": "2024-12-05",
+      "hari": "Senin",
+      "mataKuliah": "Pemrograman Web",
+      "ruangKuliah": "A-101",
+      "waktu": "08:00 - 10:00"
+    },
+    {
+      "tanggal": "2024-12-10",
+      "hari": "Selasa",
+      "mataKuliah": "Matematika Diskrit",
+      "ruangKuliah": "B-202",
+      "waktu": "10:00 - 12:00"
+    }
+  ]
+  
