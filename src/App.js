@@ -6,6 +6,8 @@ import TambahJadwal from "./pages/TambahJadwal";
 import LihatJadwal from "./pages/Lihatjadwal";
 import Dashboard from "./pages/dashboard";
 import Kalender from "./pages/Kalender";
+import AboutUs from "./pages/about";
+import Settings from "./pages/Settings";
 
 function App() {
   const [schedules, setSchedules] = useState([]);
@@ -25,6 +27,8 @@ function App() {
           element={<LihatJadwal jadwal={schedules} />}
         />
         <Route path="/kalender" element={<Kalender />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/Settings" element={<Settings />} />
       </Routes>
     </Router>
   );
