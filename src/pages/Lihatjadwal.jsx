@@ -65,18 +65,18 @@ function LihatJadwal() {
       <Navbar />
 
       {/* Halaman Jadwal */}
-      <div className="pt-20 p-8 bg-gradient-to-b from-gray-100 via-gray-200 to-gray-300 min-h-screen">
-        <h1 className="text-4xl font-extrabold text-gray-800 mb-10 text-center">
+      <div className="pt-20 p-8 bg-gradient-to-b from-cyan-950 via-cyan-900 to-cyan-700 min-h-screen">
+        <h1 className="text-4xl font-extrabold text-white mb-10 text-center">
           Daftar Mata Kuliah
         </h1>
         {isLoading ? (
           <div className="text-center text-gray-600">Loading...</div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {schedules.map((schedule) => (
               <div
                 key={schedule.id}
-                className="p-6 bg-white border border-gray-200 rounded-xl shadow-lg hover:shadow-2xl transition duration-300"
+                className="p-6 bg-white border border-gray-200 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105"
               >
                 {isEditing === schedule.id ? (
                   <div className="space-y-4">
@@ -116,7 +116,7 @@ function LihatJadwal() {
                       className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition"
                       onClick={handleEdit}
                     >
-                      Simpan
+                      Simpan Perubahan
                     </button>
                   </div>
                 ) : (

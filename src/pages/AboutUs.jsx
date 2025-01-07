@@ -31,7 +31,6 @@ function AboutUs() {
             <h2 className="text-2xl font-bold text-gray-800">Fitur Utama</h2>
             <ul className="list-disc list-inside text-gray-600">
               <li>Pencatatan dan pengelolaan jadwal kuliah.</li>
-              <li>Pengingat otomatis melalui email.</li>
               <li>Tampilan yang sederhana namun fungsional.</li>
               <li>Integrasi kalender untuk mempermudah perencanaan.</li>
             </ul>

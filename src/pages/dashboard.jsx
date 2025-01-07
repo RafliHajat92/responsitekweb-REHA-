@@ -62,51 +62,51 @@ const Dashboard = () => {
         className="relative h-screen bg-cover bg-center"
         style={{ backgroundImage: `url(${bg})` }}
       >
-        <div className="absolute top-1/3 left-20 right-0 flex justify-between items-start p-6 space-x-12">
+        <div className="absolute top-1/3 left-20 right-0 flex justify-between items-start p-12 space-x-16">
           <div className="flex flex-col w-2/3">
             <img
               src={logoreha}
               alt="Logo ReHa"
-              className="w-48 h-auto mb-5 transform hover:scale-110 transition-all duration-300 ease-in-out"
+              className="w-64 h-auto mb-6 transform hover:scale-110 transition-all duration-300 ease-in-out"
             />
-            <p className="text-lg leading-relaxed text-white">
+            <p className="text-2xl leading-relaxed text-white">
               RaHa adalah teman yang bantu kamu atur jadwal kuliah dengan mudah.
             </p>
-            <p className="text-lg leading-relaxed text-white">
+            <p className="text-2xl leading-relaxed text-white">
               Cukup masukkan jadwal, dan kamu nggak akan khawatir lupa kuliah lagi.
             </p>
-            <p className="text-lg leading-relaxed text-white">
+            <p className="text-2xl leading-relaxed text-white">
               Dengan tampilan yang sederhana, RaHa bikin kamu tetap terorganisir dan siap
               menghadapi setiap hari kuliah!
             </p>
-            <p className="mt-4 text-xl font-semibold text-white">Director by: Rafli Hajat</p>
+            <p className="mt-6 text-3xl font-semibold text-white">Director by: Rafli Hajat</p>
           </div>
 
-          <div className="flex flex-col items-start bg-white p-4 rounded-lg shadow-md max-w-sm w-full">
-            <h3 className="text-xl font-bold text-gray-800 mb-4">Jadwal Terdekat</h3>
+          <div className="flex flex-col items-start bg-white p-6 rounded-lg shadow-xl max-w-sm w-full">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6">Jadwal Terdekat</h3>
             {loading ? (
               <p>Loading...</p>
             ) : nextSchedule ? (
               <div>
-                <p className="font-semibold">{nextSchedule.name}</p>
-                <p>{`${nextSchedule.day}, ${nextSchedule.time}`}</p>
-                <p>{`Ruang: ${nextSchedule.room}`}</p>
+                <p className="font-semibold text-xl">{nextSchedule.name}</p>
+                <p className="text-lg">{`${nextSchedule.day}, ${nextSchedule.time}`}</p>
+                <p className="text-lg">{`Ruang: ${nextSchedule.room}`}</p>
               </div>
             ) : (
-              <p className="text-gray-600">Tidak ada jadwal yang terdekat saat ini.</p>
+              <p className="text-gray-600 text-lg">Tidak ada jadwal yang terdekat saat ini.</p>
             )}
           </div>
         </div>
       </div>
 
       {/* Bagian Konten Navigasi dan Highlight */}
-      <div className="bg-gray-50 py-16">
-        <h2 className="text-center text-3xl font-bold text-gray-800 mb-12">
+      <div className="  bg-gradient-to-b from-cyan-950 via-cyan-900 to-cyan-700 py-20">
+        <h2 className="text-center text-4xl font-bold text-white mb-16">
           Fitur Navigasi
         </h2>
 
-        <div className="flex flex-wrap lg:flex-nowrap justify-center items-center gap-12 px-10">
-          <div className="flex flex-wrap justify-center items-center gap-12">
+        <div className="flex flex-wrap lg:flex-nowrap justify-center items-center gap-16 px-16">
+          <div className="flex flex-wrap justify-center items-center gap-16">
             <a
               href="/tambahjadwal"
               className="flex flex-col items-center transform hover:scale-110 transition-all duration-300"
@@ -114,9 +114,9 @@ const Dashboard = () => {
               <img
                 src={Tambahjadwalfix}
                 alt="Tambah Jadwal"
-                className="w-56 h-auto rounded-md shadow-lg"
+                className="w-72 h-auto rounded-md shadow-xl"
               />
-              <p className="mt-3 text-gray-600 text-lg font-medium">Tambah Jadwal</p>
+              <p className="mt-4 text-white text-xl font-medium">Tambah Jadwal</p>
             </a>
 
             <a
@@ -126,9 +126,9 @@ const Dashboard = () => {
               <img
                 src={Lihatjadwalfix}
                 alt="Lihat Jadwal"
-                className="w-56 h-auto rounded-md shadow-lg"
+                className="w-72 h-auto rounded-md shadow-xl"
               />
-              <p className="mt-3 text-gray-600 text-lg font-medium">Lihat Jadwal</p>
+              <p className="mt-4 text-white text-xl font-medium">Lihat Jadwal</p>
             </a>
 
             <a
@@ -138,9 +138,9 @@ const Dashboard = () => {
               <img
                 src={Kalenderfix}
                 alt="Kalender"
-                className="w-56 h-auto rounded-md shadow-lg"
+                className="w-72 h-auto rounded-md shadow-xl"
               />
-              <p className="mt-3 text-gray-600 text-lg font-medium">Kalender</p>
+              <p className="mt-4 text-gray-700 text-xl font-medium">Kalender</p>
             </a>
           </div>
 
@@ -149,6 +149,57 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="bg-cyan-950 text-white py-12">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-8">
+          {/* Informasi Hak Cipta */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-2xl mb-4">Alamat produksi</h3>
+            <p className="text-lg">
+            Jl. Ringroad Selatan, Kragilan, Tamanan, Kec. 
+            Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55191
+            </p>
+            <p className="text-lg mt-2">
+              Tugas Akhir Teknologi Web Semester 3
+            </p>
+          </div>
+
+          {/* Navigasi */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-2xl mb-4">Kelebihan</h3>
+            <ul className="space-y-3 text-lg">
+              <li>Mempermudah Jadwaj</li>
+              <li>Efesiensi waktu</li>
+              <li>Pengingat Otomatis</li>
+              <li>Teman Terdekat</li>
+            </ul>
+          </div>
+
+          {/* Media Sosial */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-2xl mb-4">Ikuti Kami</h3>
+            <div className="flex space-x-8">
+              <a href="#" className="hover:text-blue-300 text-lg">Facebook</a>
+              <a href="#" className="hover:text-blue-300 text-lg">Twitter</a>
+              <a href="#" className="hover:text-blue-300 text-lg">Instagram</a>
+            </div>
+            <h3 className="font-semibold text-2xl mt-6">Download App</h3>
+            <div className="flex space-x-8 mt-4">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Google Play"
+                className="h-14"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Download_on_the_App_Store_Badge.svg"
+                alt="App Store"
+                className="h-14"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
