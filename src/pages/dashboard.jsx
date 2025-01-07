@@ -102,23 +102,11 @@ const Dashboard = () => {
       {/* Bagian Konten Navigasi dan Highlight */}
       <div className="  bg-gradient-to-b from-cyan-950 via-cyan-900 to-cyan-700 py-20">
         <h2 className="text-center text-4xl font-bold text-white mb-16">
-          Fitur Navigasi
+          Mau Pilih Apa nih?
         </h2>
 
         <div className="flex flex-wrap lg:flex-nowrap justify-center items-center gap-16 px-16">
           <div className="flex flex-wrap justify-center items-center gap-16">
-            <a
-              href="/tambahjadwal"
-              className="flex flex-col items-center transform hover:scale-110 transition-all duration-300"
-            >
-              <img
-                src={Tambahjadwalfix}
-                alt="Tambah Jadwal"
-                className="w-72 h-auto rounded-md shadow-xl"
-              />
-              <p className="mt-4 text-white text-xl font-medium">Tambah Jadwal</p>
-            </a>
-
             <a
               href="/lihatjadwal"
               className="flex flex-col items-center transform hover:scale-110 transition-all duration-300"
@@ -132,6 +120,18 @@ const Dashboard = () => {
             </a>
 
             <a
+              href="/tambahjadwal"
+              className="flex flex-col items-center transform hover:scale-110 transition-all duration-300"
+            >
+              <img
+                src={Tambahjadwalfix}
+                alt="Tambah Jadwal"
+                className="w-72 h-auto rounded-md shadow-xl"
+              />
+              <p className="mt-4 text-white text-xl font-medium">Tambah Jadwal</p>
+            </a>
+
+            <a
               href="/kalender"
               className="flex flex-col items-center transform hover:scale-110 transition-all duration-300"
             >
@@ -140,7 +140,7 @@ const Dashboard = () => {
                 alt="Kalender"
                 className="w-72 h-auto rounded-md shadow-xl"
               />
-              <p className="mt-4 text-gray-700 text-xl font-medium">Kalender</p>
+              <p className="mt-4 text-white text-xl font-medium">Kalender</p>
             </a>
           </div>
 
